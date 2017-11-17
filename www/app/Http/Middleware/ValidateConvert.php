@@ -39,7 +39,7 @@ class ValidateConvert
                         }
                     }
 
-                    if (strtolower($arguments['action']) == 'bankDrawout' ||
+                    if (strtolower($arguments['action']) == 'withdraw' ||
                         strtolower($arguments['action']) == 'transfer') {
                         if (empty($request['bankDrawout']) || !is_numeric($request['bankDrawout'])) {
                             $checklistArr[] = 'KEY: `bankDrawout` should be needed for withDraw account or transfer money';
