@@ -27,6 +27,7 @@ docker exec -it server /bin/bash
 cd /var/www
 ./vendor/bin/phpunit
 ```
+If test case fail, please check your docker container is same with /www/test/testcase.php
 
 ## Close project
 ```
